@@ -1,0 +1,7 @@
+from building import *
+
+src = ['sensorfusion-demo.cpp']
+
+group = DefineGroup('RTduino-libraries', src, depend = ['PKG_ARDUINO_RTDUINO_SENSORFUSION_SHIELD_DEMO'])
+
+Return('group')
