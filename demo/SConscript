@@ -23,6 +23,12 @@ if GetDepend('PKG_RTDUINO_SENSORFUSION_SHIELD_QMC5883L_DEMO'):
 if GetDepend('PKG_RTDUINO_SENSORFUSION_SHIELD_SC7A20_DEMO'):
     src += ['sensorfusion-sc7a20-demo.cpp']
 
+if GetDepend('PKG_RTDUINO_SENSORFUSION_SHIELD_ITG3205_DEMO'):
+    src += ['sensorfusion-itg3205-demo.cpp']
+
+if GetDepend('PKG_RTDUINO_SENSORFUSION_SHIELD_AT24C256_DEMO'):
+    src += ['sensorfusion-at24c256-demo.cpp']
+
 group = DefineGroup('RTduino-libraries', src, depend = ['PKG_ARDUINO_RTDUINO_SENSORFUSION_SHIELD_DEMO'])
 
 Return('group')
